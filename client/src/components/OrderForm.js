@@ -14,7 +14,7 @@ const OrderForm = ({ onSuccess }) => {
     e.preventDefault();
     setStatus('שולח...');
     try {
-      const response = await fetch('http://localhost:4000/orders', {
+      const response = await fetch('http://ShoppingApi-env.eba-ecdpgyvk.us-east-1.elasticbeanstalk.com/orders', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
