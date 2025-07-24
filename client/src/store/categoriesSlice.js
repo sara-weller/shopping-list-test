@@ -4,7 +4,7 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 export const fetchCategories = createAsyncThunk(
   'categories/fetchCategories',
   async () => {
-    const response = await fetch('http://localhost:5000/api/categories'); // Change URL if needed
+    const response = await fetch('http://ShoppingApi-env.eba-ecdpgyvk.us-east-1.elasticbeanstalk.com/api/categories'); // Change URL if needed
     return await response.json();
   }
 );
