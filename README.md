@@ -41,7 +41,7 @@ npm run start:dev
 ### 4. קובץ `.env` לדוגמה (לשים בכל שירות)
 
 ```env
-# לדוגמה עבור Nest
+
 MONGO_URI=mongodb://localhost:27017/orders
 ```
 
