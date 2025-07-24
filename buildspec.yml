@@ -5,11 +5,11 @@ phases:
     runtime-versions:
       nodejs: 18
     commands:
+      - cd server-node
       - npm install
   build:
     commands:
       - npm run build
-
 artifacts:
   files:
-    - '**/*'
+    - server-node/**/*
