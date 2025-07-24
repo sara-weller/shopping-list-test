@@ -5,11 +5,16 @@ phases:
     runtime-versions:
       nodejs: 18
     commands:
+      - echo "Installing dependencies..."
       - cd server-node
-      - npm install
+      - npm ci  # עדיף על npm install ב-CodeBuild כי הוא מהיר ויציב יותר
+
   build:
     commands:
+      - echo "Building project..."
       - npm run build
+
 artifacts:
+  base-directory: server-node/dist  # נתיב לתיקייה שמכילה את הקוד אחרי בנייה
   files:
-    - server-node/**/*
+    - '**/*'
