@@ -33,7 +33,7 @@ npm start
 ### 3. הרצת NestJS
 
 ```bash
-cd nest-server
+cd server-node
 npm install
 npm run start:dev
 ```
